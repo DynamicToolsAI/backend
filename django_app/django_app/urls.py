@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('api/create_user/', CreateUserAPIView.as_view(), name='create_user'),
-        path('get_users/', UserListView.as_view(), name='get_users'),
+    path('get_users/', UserListView.as_view(), name='get_users'),
     path('get_users/<int:user_id>/', UserDetailsView.as_view(), name='get_user_details'),
 ]
